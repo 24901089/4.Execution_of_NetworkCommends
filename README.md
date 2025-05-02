@@ -26,9 +26,9 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 ## Program
-```
-CLIENT:
 
+CLIENT:
+```
 import socket 
 from pythonping import ping 
 s=socket.socket() 
@@ -41,10 +41,10 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
-
+```
 
 SERVER:
-
+```
 import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
@@ -53,7 +53,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 
-
+```
 
 ## Output
 
