@@ -41,9 +41,9 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 
-```
+
 SERVER:
-```
+
 import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
