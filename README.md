@@ -41,9 +41,9 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 
-```
+
 SERVER:
-```
+
 import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
@@ -52,7 +52,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 
-```
+
 
 ## Output
 ![Screenshot 2025-05-02 103420](https://github.com/user-attachments/assets/0f85633f-fe4f-4ff6-ad75-7480ef70e8ff)
